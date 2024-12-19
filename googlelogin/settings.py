@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',  # Correct singular form
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',  # For Google SSO
+    'allauth.socialaccount.providers.google',  # For Google SSO,
+    'allauth.socialaccount.providers.github'
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -53,6 +54,7 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         "AUTH_PARAMS": {"access_type" : "online"}
     }
+   
 }
 
 MIDDLEWARE = [
