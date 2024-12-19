@@ -10,11 +10,14 @@
     </head>
     <body>
        
-        <h2>Google Login</h2>
+        <h2>Soical Login</h2>
         <a href="{% provider_login_url 'google' %}">Login with Google</a>
+        <br>
+        {% csrf_token %}
+        <a href="{% provider_login_url 'github'%}"> Login with GitHub</a>
 
         {% if user.is_authenticated %}
-        <p> You are signed in as {{user.email}} </p>
+        <p> You are signed in as {{user.email}} {{user}}</p>
         <a href= "logout">logout</a>
         {% endif %}
     </body>
