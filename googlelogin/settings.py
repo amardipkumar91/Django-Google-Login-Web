@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'allauth.account',  # Correct singular form
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',  # For Google SSO,
-    'allauth.socialaccount.providers.github'
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.facebook'
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
